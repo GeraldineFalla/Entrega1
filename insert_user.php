@@ -14,7 +14,7 @@ $sql = "INSERT INTO usersproyecto VALUES ('$ID', '$Name','$LastName','$Phone','$
 $query = mysqli_query($con, $sql);
 
 if ($query) {
-    Header("Location: index.php");
+    Header("Location: contacto.php");
     exit; // Agrega exit para evitar que se ejecute código adicional
 } else {
     echo "Error al insertar usuario: " . mysqli_error($con);

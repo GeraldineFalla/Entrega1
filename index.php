@@ -1,3 +1,15 @@
+<?php session_start();
+
+if(isset($_SESSION['usuario'])){
+    require 'contenido.view.php';
+
+}else{
+    header('Location: registrate.php');
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,19 +31,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pagina2.html">Catálogo</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-
-                
-              </li>
+                <a class="nav-link active" aria-current="page" href="./index.php">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pagina2.php">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./nosotros.php">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./contacto.php">Contacto</a>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -82,7 +91,7 @@
                     intervenciones para traumas y puede ser una buena compañía a quienes padecen de depresión. 
                     No se recomienda como elemento para trabajar con niños por su peso y temperamento. 
                 </p>
-                
+
         </div>
             <div class="product">
                 <img src="imagenes/Olivia.jpg" alt="">
@@ -92,7 +101,7 @@
                     Sin embargo, ha sido entranada para asistir en terapias con niños. Se especializa en 
                     asistencia en el autismo, ansiedad social y apoyo emocional en general. 
                 </p>
-                
+
         </div>
             <div class="product">
                 <img src="imagenes/Cookie.jpg" alt="">
@@ -102,7 +111,7 @@
                     personas con discapacidad física y cognitiva. No se recomienda como elemento para trabajar
                     con niños.  
                 </p>
-                
+
         </div>
             <div class="product">
                 <img src="imagenes/Bigotes.jpg" alt="">
@@ -111,7 +120,7 @@
                     Bigotes es un gato de 5 años, especializado en el trabajo con niños y adolescentes. 
                     Está especializado en acompañamiento para exposición en fobias y apoyo emocional en momentos de crisis.
                 </p>
-            
+
         </div>
             <div class="product">
                 <img src="imagenes/Spirit.jpg" alt="">
@@ -121,23 +130,11 @@
                     pero al mismo tiempo puede trabajar como apoyo emocional para trabajo tanto con niños como con adultos. 
                     Al realizar las terapias con Spirit, es necesario contar con su entrenador, para ser de guía técnica.
                 </p>
-                
+
         </div>
-        
+
 
     </main>
-
-    <section class="contact container">
-        <h2>Contacto</h2>
-        <form>
-            <input type="email" placeholder="correo" class="input-field">
-            <button> Enviar
-            </button>
-        </form>
-    </section>   
-
-    </section>
-   
 
 
 <footer class="footer">

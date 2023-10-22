@@ -1,0 +1,205 @@
+body {
+    font-family: 'Kanit', sans-serif;
+ 
+ }
+ 
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background-image: url("imagenes/pexels-elina-volkova-13428333.jpg");
+    background-size: contain;
+    background-repeat:round;
+    background-attachment: fixed;
+    list-style: none;
+    text-decoration: none;
+ 
+  
+ 
+ }
+ #carouselExampleSlidesOnly {
+  width: 100%; 
+  max-width: 600px;
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+.carousel-item {
+  text-align: center; /* Centra el contenido del carrusel */
+}
+
+.carousel-item img {
+  margin-top: auto;
+  max-width: 90%; /* Ajusta el tamaño máximo de las imágenes */
+  height: 120%;
+}
+
+
+.carousel-indicators {
+  bottom: 10px; 
+}
+
+.carousel-indicators li {
+  background-color: palevioletred;
+  width: 10px; /* Ajusta el tamaño de los puntos */
+  height: 10px;
+
+}
+
+ 
+ .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    margin-top: 0px;
+    background-color: #af4848; 
+    color: palevioletred;
+    padding: 10px 0; /* Ajusta el espaciado interno */
+  }
+ 
+  /* Estilos para el enlace de la marca (navbar-brand) */
+  .navbar-brand {
+    font-family:'Kanit', sans-serif;
+    color: rgba(0, 0, 0, 0.5); /* Cambia el color del texto */
+    font-size: 200px; /* Cambia el tamaño de fuente */
+    font-weight: bold; /* Cambia el peso de fuente */
+  }
+ 
+  /* Estilos para los enlaces de navegación */
+  .navbar-nav .nav-link {
+    margin-top: auto;
+    margin-left: 250px;
+    color: black; /* Cambia el color del texto */
+    font-size: 16px; /* Cambia el tamaño de fuente */
+    font-family: 'Kanit', sans-serif;
+  }
+ 
+  /* Estilos para el botón del formulario de búsqueda */
+  .navbar-form .form-control {
+    border-color: coral; /* Cambia el color del borde del campo de búsqueda */
+    color: coral; /* Cambia el color del texto en el campo de búsqueda */
+  }
+ 
+  button {
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 154px;
+    height: 49px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: "";
+    font-family: 'Delicious Handrawn', cursive;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  button:hover::before {
+    width: 100%;
+  }
+ 
+ 
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+ 
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+  .navbar-form .btn:hover {
+    background-color: palevioletred; /* Cambia el color de fondo al pasar el mouse */
+    color: black; 
+  }
+ 
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+ 
+    100% {
+      background-position: 400%;
+    }
+  }
+ 
+ 
+  .about-txt {
+    flex-basis: 50%;
+    text-align: justify;
+    padding-right: 60px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: white;
+ }
+
+ 
+ 
+ .footer {
+    background-color: #333; 
+    color: palevioletred; 
+    padding: 40px 0;
+ }
+ 
+ .footer-content {
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ .link {
+    text-align: center;
+ }
+ 
+ .link h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+ }
+ 
+ .link ul {
+    list-style: none;
+    padding: 0;
+ }
+ 
+ .link li {
+    margin-bottom: 8px;
+ }
+ 
+ .link a {
+    color: white;
+    text-decoration: none;
+ }
+ 
+ .link a:hover {
+    text-decoration: underline;
+ }

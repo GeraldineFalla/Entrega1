@@ -14,11 +14,6 @@ function connection(){
 
     return $connect;
 }
-if(connection()){
-    echo "Conexión exitosa";
-}else{
-    echo "Error al conectar a la base de datos";
-}
 
 ?>
 
